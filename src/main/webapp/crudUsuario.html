@@ -1,0 +1,43 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>CRUD USUÁRIO</title>
+		<link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+    	<header>
+    		<h2>Fábrica de Programador módulo 3</h2>
+    	</header>
+    	
+    	<nav>
+    		<ul>
+    			<li>
+    				<a href="index.html">INÍCIO</a>
+    			</li>
+    			<li>
+    				<a href="">EXERCÍCIO 1</a>
+    			</li>
+    		</ul>
+    	</nav>    	
+    	
+		<div class="center">
+			<form action="javascript:void(0)" onsubmit="app.salvar()" class="margin-top cem">
+				<input type="text" value="" id="nome" placeholder="novo usuario">
+				<input type="text" value="" id="email" placeholder="novo email">
+				<input type="submit" value="SALVAR">
+				<input type="button" value="CANCELAR" onclick="app.limparCampo()">
+			</form>		
+			
+			<p id="contador"></p>
+		
+			<table class="margin-bottom tabela cem">
+				<tbody id="usuarios"></tbody>
+			</table>			
+		</div>
+		
+		<footer>
+			<h6>FABRICA DE PROGRAMADOR T16 2017</h6>
+		</footer>
+    </body>
+	<script src="js/script.js"></script>
+</html>
